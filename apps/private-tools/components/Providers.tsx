@@ -1,0 +1,4 @@
+'use client';
+import {createTheme,ThemeProvider,CssBaseline} from '@mui/material';
+const theme=createTheme({palette:{primary:{main:'#265ed8'},background:{default:'#f6f8fc'},text:{primary:'#172033',secondary:'#66748a'}},typography:{fontFamily:'Arial, Helvetica, sans-serif',button:{textTransform:'none',fontWeight:600,fontSize:13}},shape:{borderRadius:8},components:{MuiButton:{defaultProps:{disableElevation:true},styleOverrides:{root:{minHeight:40}}},MuiTextField:{defaultProps:{size:'small',fullWidth:true}},MuiOutlinedInput:{styleOverrides:{root:{background:'#fff',fontSize:14,minHeight:44}}},MuiInputLabel:{styleOverrides:{root:{fontSize:14}}},MuiTab:{styleOverrides:{root:{textTransform:'none',fontSize:13,minWidth:80,minHeight:55}}}}});
+export default function Providers({children}:{children:React.ReactNode}){return <ThemeProvider theme={theme}><CssBaseline/>{children}</ThemeProvider>}

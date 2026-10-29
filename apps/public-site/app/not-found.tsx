@@ -1,0 +1,1 @@
+export default function NotFound(){return <main id="main" className="page-hero"><div className="eyebrow">404 · PAGE NOT FOUND</div><h1>This page is off the clock.</h1><p>Find the document tool or guide you need from the home page.</p><a className="button" href="/">Back to PayDockit →</a></main>}

@@ -1,0 +1,16 @@
+[
+  {
+    "app": "public-site",
+    "initialScriptCount": 0,
+    "initialScriptGzipBytes": 0,
+    "budgetBytes": 153600,
+    "withinBudget": true
+  },
+  {
+    "app": "private-tools",
+    "initialScriptCount": 9,
+    "initialScriptGzipBytes": 211246,
+    "budgetBytes": 256000,
+    "withinBudget": true
+  }
+]

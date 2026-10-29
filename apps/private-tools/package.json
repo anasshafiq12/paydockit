@@ -1,0 +1,1 @@
+{"name":"@paydockit/tools","private":true,"scripts":{"dev":"next dev -p 3001","build":"next build"}}
