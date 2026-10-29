@@ -1,5 +1,6 @@
 import Decimal from 'decimal.js';
 import { z } from 'zod';
+import {templateIds} from '../documents/templates';
 
 Decimal.set({ precision: 32, rounding: Decimal.ROUND_HALF_UP });
 export const amountSchema = z.string().regex(/^\d{1,12}(\.\d{1,4})?$/, 'Enter a nonnegative amount with up to four decimal places.');
@@ -16,7 +17,7 @@ export const documentSchema = z.object({
   basis: z.enum(['salary','hourly']), basic: amountSchema, hours: amountSchema, rate: amountSchema, lines: z.array(lineSchema).max(100),
   paidDays: amountSchema, unpaidDays: amountSchema, ytd: amountSchema,
   employmentType: text, status: z.enum(['current','former','experience']), addressee: text, purpose: text, duties: text, includeSalary: z.boolean(), salaryFrequency: z.enum(['monthly','annual']), salaryDesignation: z.enum(['gross','net']), signer: text, signerTitle: text, notes: text,
-  template: z.enum(['classic','minimal','corporate','ledger']), paper: z.enum(['A4','Letter']), language: z.enum(['en','en-ar','en-ur','ar','ur']),
+  template: z.enum(templateIds), paper: z.enum(['A4','Letter']), language: z.enum(['en','en-ar','en-ur','ar','ur']),
   logo: z.string().max(8000000), signature: z.string().max(8000000), calculationSnapshot:snapshotSchema.optional(), stampEnabled: z.boolean(), stampText: z.string().max(80), stampSubtext: z.string().max(80), stampColor: z.string().regex(/^#[a-fA-F0-9]{6}$/), stampShape: z.enum(['circle','oval','rectangle','rounded']), stampWidth: z.number().min(20).max(80), stampX: z.number().min(0).max(170), stampY: z.number().min(20).max(250), stampRotation: z.number().min(-180).max(180), stampOpacity: z.number().min(.1).max(1),
 });
 export type PayrollDocument = z.infer<typeof documentSchema>;

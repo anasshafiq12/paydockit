@@ -36,7 +36,7 @@ After building, `scripts/headers.mjs` creates host-compatible security headers w
 - Salary slip: company and employee details, salary or hours × rate, earnings, deductions, reimbursements, employer contributions, informational days, and opening/closing YTD gross.
 - Employment certificate: current/former employment, experience, optional salary, approved duties, purpose, department-only signer.
 - Salary certificate: monthly/annual, gross/net designation, salary breakdown, contact and signer.
-- Four document layouts; General plus eight optional formatting presets; editable currency; A4/Letter.
+- Eight document layouts with visual selection and full-size preview; General plus eight optional formatting presets; editable currency; A4/Letter.
 - Local raster logo/signature import, generated business stamp with millimetre placement, drag/keyboard/numeric controls.
 - Searchable English PDFs; print; blank templates; versioned JSON import/export; explicit expiring local drafts and employer profile.
 - Business stamp SVG and transparent PNG, saved local design.
