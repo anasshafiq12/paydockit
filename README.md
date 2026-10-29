@@ -63,3 +63,5 @@ Public pages contain server-generated HTML, unique titles/descriptions, canonica
 5. Keep advertising disabled unless the real publisher and appropriate consent provider are configured. No publisher ID or consent is fabricated.
 
 See `docs/architecture.md`, `docs/privacy-data-map.md`, `docs/rule-maintenance.md`, `docs/source-register.md`, and `docs/implementation-status.md`.
+
+The included app-specific .env.production files point to the registered private preview origins. Local development still uses localhost defaults. Override these variables when moving to your own domains. Public exports preserve the statically rendered Next/React HTML and JSON-LD while removing unused hydration scripts; adding a public client component intentionally fails that optimization guard.
