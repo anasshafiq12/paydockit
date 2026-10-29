@@ -39,7 +39,7 @@ After building, `scripts/headers.mjs` creates host-compatible security headers w
 - Eight document layouts with visual selection and full-size preview; General plus eight optional formatting presets; editable currency; A4/Letter.
 - Local raster logo/signature import, generated business stamp with millimetre placement, drag/keyboard/numeric controls.
 - Searchable English PDFs; print; blank templates; versioned JSON import/export; explicit expiring local drafts and employer profile.
-- Business stamp SVG and transparent PNG, saved local design.
+- Ten professional stamp layouts: curved circular/oval text, up to four center lines, 1–3 borders, adjustable fonts/spacing, safe SVG and transparent 1,200 px PNG exports, saved design/project import/export, and local transfer into document editors.
 - Six arithmetic calculators and JSON explanation reports.
 - Custom tax workspace: progressive and base-plus-marginal models, source notes, dates, allowances, capped contributions, simulations, editable fixtures, clone, safe JSON import, snapshot report.
 - CSV batch mapping, row validation, up to 100 English PDFs in a ZIP, progress/cancellation, and per-row manifest.

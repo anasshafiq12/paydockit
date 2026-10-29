@@ -1,0 +1,4 @@
+import {stampTemplates,stampSample} from '@shared/stamps/schema';
+import {stampSVG} from '@shared/stamps/render';
+import {toolsOrigin} from '@shared/content';
+export default function StampCatalog(){return <section className="public-stamp-catalog"><div className="eyebrow">A MARK THAT LOOKS LIKE YOUR BUSINESS</div><h2>Ten professional stamp designs.</h2><p>Curved company names, multi-line office stamps, clear registration details, and a choice of borders. Every design is editable in the local studio.</p><div className="public-stamp-grid">{stampTemplates.map(([id,name,description])=><article key={id}><a href={`${toolsOrigin}/stamp-maker/?design=${id}`} aria-label={`Customize ${name}`} className="public-stamp-image" dangerouslySetInnerHTML={{__html:stampSVG(stampSample(id),'public-stamp-'+id)}}/><h3>{name}</h3><p>{description}</p></article>)}</div><small>Fictional Acme Studio examples. Use only company details you are authorized to represent.</small></section>}

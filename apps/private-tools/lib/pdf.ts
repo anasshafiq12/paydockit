@@ -1,6 +1,6 @@
 import {type PayrollDocument,totals,money,dateLabel,certificateParagraph,amountWords,issues} from '@shared/domain';
 import {getTemplate} from '@shared/documents/templates';
-import {stampPNG} from './stamp';
+import {stampPNG,stampDimensions} from './stamp';
 
 export async function generatePDF(doc:PayrollDocument){
  const problems=issues(doc);if(problems.length)throw new Error(problems.join('\n'));
@@ -97,7 +97,7 @@ export async function generatePDF(doc:PayrollDocument){
  room(doc.signature?40:30);y+=9;
  if(doc.signature){const props=pdf.getImageProperties(doc.signature);const w=Math.min(38,15*props.width/props.height),h=Math.min(15,38*props.height/props.width);pdf.addImage(doc.signature,'PNG',margin,y,w,h);y+=h+4;}
  pdf.setDrawColor('#c3cddb');pdf.setLineWidth(.25);pdf.line(margin,y,margin+53,y);y+=6;base(bodyFont,'bold',10);pdf.text(doc.signer||'Authorized signatory',margin,y);y+=6;base('helvetica','normal',8,'#8693a5');pdf.text(pdf.splitTextToSize(doc.signerTitle,bodyWidth),margin,y);
- if(doc.stampEnabled){pdf.setPage(1);const image=await stampPNG(doc);const factor=doc.stampShape==='circle'?220/240:155/240;pdf.addImage(image,'PNG',doc.stampX,doc.stampY,doc.stampWidth,doc.stampWidth*factor,undefined,'FAST',-doc.stampRotation);}
+ if(doc.stampEnabled){pdf.setPage(1);const image=await stampPNG(doc);const dimensions=stampDimensions(doc);const factor=dimensions.height/dimensions.width;pdf.addImage(image,'PNG',doc.stampX,doc.stampY,doc.stampWidth,doc.stampWidth*factor,undefined,'FAST',-doc.stampRotation);}
  const count=pdf.getNumberOfPages();for(let i=1;i<=count;i++){pdf.setPage(i);footer(i,count);}
  pdf.setProperties({title:doc.kind,author:doc.company,subject:'Employer-prepared document - '+design.name});return pdf;
 }

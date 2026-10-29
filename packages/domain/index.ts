@@ -1,6 +1,7 @@
 import Decimal from 'decimal.js';
 import { z } from 'zod';
 import {templateIds} from '../documents/templates';
+import {stampSettingsSchema,defaultStampSettings} from '../stamps/schema';
 
 Decimal.set({ precision: 32, rounding: Decimal.ROUND_HALF_UP });
 export const amountSchema = z.string().regex(/^\d{1,12}(\.\d{1,4})?$/, 'Enter a nonnegative amount with up to four decimal places.');
@@ -18,7 +19,7 @@ export const documentSchema = z.object({
   paidDays: amountSchema, unpaidDays: amountSchema, ytd: amountSchema,
   employmentType: text, status: z.enum(['current','former','experience']), addressee: text, purpose: text, duties: text, includeSalary: z.boolean(), salaryFrequency: z.enum(['monthly','annual']), salaryDesignation: z.enum(['gross','net']), signer: text, signerTitle: text, notes: text,
   template: z.enum(templateIds), paper: z.enum(['A4','Letter']), language: z.enum(['en','en-ar','en-ur','ar','ur']),
-  logo: z.string().max(8000000), signature: z.string().max(8000000), calculationSnapshot:snapshotSchema.optional(), stampEnabled: z.boolean(), stampText: z.string().max(80), stampSubtext: z.string().max(80), stampColor: z.string().regex(/^#[a-fA-F0-9]{6}$/), stampShape: z.enum(['circle','oval','rectangle','rounded']), stampWidth: z.number().min(20).max(80), stampX: z.number().min(0).max(170), stampY: z.number().min(20).max(250), stampRotation: z.number().min(-180).max(180), stampOpacity: z.number().min(.1).max(1),
+  logo: z.string().max(8000000), signature: z.string().max(8000000), calculationSnapshot:snapshotSchema.optional(), ...stampSettingsSchema.shape,
 });
 export type PayrollDocument = z.infer<typeof documentSchema>;
 export const currencies = ['USD','GBP','CAD','AUD','INR','PKR','SAR','AED','EUR','JPY','KWD'] as const;
@@ -28,7 +29,7 @@ export const presets: Record<string,{name:string;currency:PayrollDocument['curre
 export const today = () => new Date().toLocaleDateString('en-CA');
 export function blankDocument(kind:PayrollDocument['kind']='payslip'):PayrollDocument {
   const date = today();
-  return {schemaVersion:1,kind,sample:false,company:'',address:'',contact:'',registration:'',employee:'',employeeId:'',title:'',department:'',translatedCompany:'',translatedEmployee:'',translatedTitle:'',translatedAddress:'',startDate:'',endDate:'',periodStart:date.slice(0,7)+'-01',periodEnd:date,paymentDate:date,issueDate:date,reference:'',currency:'USD',preset:'general',basis:'salary',basic:'0',hours:'0',rate:'0',lines:[],paidDays:'0',unpaidDays:'0',ytd:'0',employmentType:'Full-time',status:'current',addressee:'To whom it may concern',purpose:'',duties:'',includeSalary:false,salaryFrequency:'monthly',salaryDesignation:'gross',signer:'',signerTitle:'Human Resources',notes:'',template:'classic',paper:'A4',language:'en',logo:'',signature:'',stampEnabled:false,stampText:'',stampSubtext:'AUTHORIZED BUSINESS',stampColor:'#1d4ed8',stampShape:'circle',stampWidth:38,stampX:145,stampY:210,stampRotation:-12,stampOpacity:.85};
+  return {...defaultStampSettings,stampTemplate:"corporate-round",stampLayout:"curved",schemaVersion:1,kind,sample:false,company:'',address:'',contact:'',registration:'',employee:'',employeeId:'',title:'',department:'',translatedCompany:'',translatedEmployee:'',translatedTitle:'',translatedAddress:'',startDate:'',endDate:'',periodStart:date.slice(0,7)+'-01',periodEnd:date,paymentDate:date,issueDate:date,reference:'',currency:'USD',preset:'general',basis:'salary',basic:'0',hours:'0',rate:'0',lines:[],paidDays:'0',unpaidDays:'0',ytd:'0',employmentType:'Full-time',status:'current',addressee:'To whom it may concern',purpose:'',duties:'',includeSalary:false,salaryFrequency:'monthly',salaryDesignation:'gross',signer:'',signerTitle:'Human Resources',notes:'',template:'classic',paper:'A4',language:'en',logo:'',signature:'',stampEnabled:false,stampText:'',stampSubtext:'AUTHORIZED BUSINESS',stampColor:'#1d4ed8',stampShape:'circle',stampWidth:38,stampX:145,stampY:210,stampRotation:-12,stampOpacity:.85};
 }
 export function sampleDocument(kind:PayrollDocument['kind']='payslip'):PayrollDocument {
   return {...blankDocument(kind),sample:true,company:'Acme Studio',address:'24 Maple Avenue, Springfield',contact:'hr@example.com',employee:'Alex Morgan',employeeId:'EMP-042',title:'Product Designer',department:'Design',startDate:'2024-03-04',basic:'4800',paidDays:'22',signer:'Jamie Parker',signerTitle:'People Operations Manager',stampText:'ACME STUDIO',lines:[{id:'housing',label:'Housing allowance',translated:'',amount:'600',category:'earning',taxable:false},{id:'transport',label:'Transport allowance',translated:'',amount:'200',category:'earning',taxable:false},{id:'tax',label:'Manual withholding',translated:'',amount:'420',category:'deduction',taxable:false},{id:'insurance',label:'Health insurance',translated:'',amount:'80',category:'deduction',taxable:false}]};
