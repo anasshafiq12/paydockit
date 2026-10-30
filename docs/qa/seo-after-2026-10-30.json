@@ -1,0 +1,1783 @@
+{
+  "auditedAt": "2026-10-30T11:19:31.364Z",
+  "site": "https://www.paydockit.com",
+  "scope": "Offline validation of generated static HTML and Vercel route configuration. No browser rendering, external rich-result validation, rankings, or field Core Web Vitals are measured.",
+  "passed": true,
+  "sitemapUrls": 27,
+  "pages": [
+    {
+      "url": "https://www.paydockit.com/",
+      "status": 200,
+      "title": "Free Payslip, Certificate & Stamp Generators | PayDockit",
+      "description": "Create salary slips, employment certificates, salary certificates and business stamps. Free browser-based tools with no signup. Your document data stays on your device.",
+      "h1": [
+        "Free payslips and certificates. Company stamps, made simple."
+      ],
+      "canonical": "https://www.paydockit.com/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 19714,
+      "schemaTypes": [
+        "Organization"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/calculators/salary-converter/",
+        "https://www.paydockit.com/calculators/salary-increase/",
+        "https://www.paydockit.com/calculators/overtime/",
+        "https://www.paydockit.com/calculators/unpaid-leave/",
+        "https://www.paydockit.com/calculators/amount-to-words/",
+        "https://www.paydockit.com/guides/privacy-and-local-backups/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/guides/understanding-your-salary-slip/",
+        "https://www.paydockit.com/guides/employment-vs-salary-certificate/",
+        "https://www.paydockit.com/guides/gross-net-and-cash-payable/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/templates/",
+      "status": 200,
+      "title": "Professional Salary Slip & Certificate Design Templates | PayDockit",
+      "description": "Preview ten professional document designs for salary slips, employment certificates, and salary certificates. Beautiful letterheads and matching page footers.",
+      "h1": [
+        "Salary slip and certificate templates"
+      ],
+      "canonical": "https://www.paydockit.com/templates/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 54631,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/payslip/?template=classic",
+        "https://www.paydockit.com/payslip/?template=classic",
+        "https://www.paydockit.com/payslip/?template=minimal",
+        "https://www.paydockit.com/payslip/?template=minimal",
+        "https://www.paydockit.com/payslip/?template=corporate",
+        "https://www.paydockit.com/payslip/?template=corporate",
+        "https://www.paydockit.com/payslip/?template=ledger",
+        "https://www.paydockit.com/payslip/?template=ledger",
+        "https://www.paydockit.com/payslip/?template=executive",
+        "https://www.paydockit.com/payslip/?template=executive",
+        "https://www.paydockit.com/payslip/?template=editorial",
+        "https://www.paydockit.com/payslip/?template=editorial",
+        "https://www.paydockit.com/payslip/?template=modern",
+        "https://www.paydockit.com/payslip/?template=modern",
+        "https://www.paydockit.com/payslip/?template=framed",
+        "https://www.paydockit.com/payslip/?template=framed",
+        "https://www.paydockit.com/payslip/?template=payroll-form",
+        "https://www.paydockit.com/payslip/?template=payroll-form",
+        "https://www.paydockit.com/payslip/?template=hr-letter",
+        "https://www.paydockit.com/payslip/?template=hr-letter",
+        "https://www.paydockit.com/employment-certificate/?template=classic",
+        "https://www.paydockit.com/employment-certificate/?template=classic",
+        "https://www.paydockit.com/employment-certificate/?template=minimal",
+        "https://www.paydockit.com/employment-certificate/?template=minimal",
+        "https://www.paydockit.com/employment-certificate/?template=corporate",
+        "https://www.paydockit.com/employment-certificate/?template=corporate",
+        "https://www.paydockit.com/employment-certificate/?template=ledger",
+        "https://www.paydockit.com/employment-certificate/?template=ledger",
+        "https://www.paydockit.com/employment-certificate/?template=executive",
+        "https://www.paydockit.com/employment-certificate/?template=executive",
+        "https://www.paydockit.com/employment-certificate/?template=editorial",
+        "https://www.paydockit.com/employment-certificate/?template=editorial",
+        "https://www.paydockit.com/employment-certificate/?template=modern",
+        "https://www.paydockit.com/employment-certificate/?template=modern",
+        "https://www.paydockit.com/employment-certificate/?template=framed",
+        "https://www.paydockit.com/employment-certificate/?template=framed",
+        "https://www.paydockit.com/employment-certificate/?template=payroll-form",
+        "https://www.paydockit.com/employment-certificate/?template=payroll-form",
+        "https://www.paydockit.com/employment-certificate/?template=hr-letter",
+        "https://www.paydockit.com/employment-certificate/?template=hr-letter",
+        "https://www.paydockit.com/salary-certificate/?template=classic",
+        "https://www.paydockit.com/salary-certificate/?template=classic",
+        "https://www.paydockit.com/salary-certificate/?template=minimal",
+        "https://www.paydockit.com/salary-certificate/?template=minimal",
+        "https://www.paydockit.com/salary-certificate/?template=corporate",
+        "https://www.paydockit.com/salary-certificate/?template=corporate",
+        "https://www.paydockit.com/salary-certificate/?template=ledger",
+        "https://www.paydockit.com/salary-certificate/?template=ledger",
+        "https://www.paydockit.com/salary-certificate/?template=executive",
+        "https://www.paydockit.com/salary-certificate/?template=executive",
+        "https://www.paydockit.com/salary-certificate/?template=editorial",
+        "https://www.paydockit.com/salary-certificate/?template=editorial",
+        "https://www.paydockit.com/salary-certificate/?template=modern",
+        "https://www.paydockit.com/salary-certificate/?template=modern",
+        "https://www.paydockit.com/salary-certificate/?template=framed",
+        "https://www.paydockit.com/salary-certificate/?template=framed",
+        "https://www.paydockit.com/salary-certificate/?template=payroll-form",
+        "https://www.paydockit.com/salary-certificate/?template=payroll-form",
+        "https://www.paydockit.com/salary-certificate/?template=hr-letter",
+        "https://www.paydockit.com/salary-certificate/?template=hr-letter",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/guides/",
+      "status": 200,
+      "title": "Payroll & Employment Document Guides | PayDockit",
+      "description": "Practical English guides to salary slips, certificates, salary calculations, presets, and local privacy.",
+      "h1": [
+        "Salary slip, certificate and payroll guides"
+      ],
+      "canonical": "https://www.paydockit.com/guides/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6666,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/guides/understanding-your-salary-slip/",
+        "https://www.paydockit.com/guides/employment-vs-salary-certificate/",
+        "https://www.paydockit.com/guides/gross-net-and-cash-payable/",
+        "https://www.paydockit.com/guides/country-presets/",
+        "https://www.paydockit.com/guides/privacy-and-local-backups/",
+        "https://www.paydockit.com/guides/custom-tax-brackets/",
+        "https://www.paydockit.com/guides/company-stamp-png-vs-svg/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/about/",
+      "status": 200,
+      "title": "About PayDockit | PayDockit",
+      "description": "PayDockit about paydockit. Learn about scope, responsibilities, and local document processing.",
+      "h1": [
+        "About PayDockit"
+      ],
+      "canonical": "https://www.paydockit.com/about/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 5386,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/privacy/",
+      "status": 200,
+      "title": "Privacy policy | PayDockit",
+      "description": "PayDockit privacy policy. Learn about scope, responsibilities, and local document processing.",
+      "h1": [
+        "Privacy policy"
+      ],
+      "canonical": "https://www.paydockit.com/privacy/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 5659,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/terms/",
+      "status": 200,
+      "title": "Terms of use | PayDockit",
+      "description": "PayDockit terms of use. Learn about scope, responsibilities, and local document processing.",
+      "h1": [
+        "Terms of use"
+      ],
+      "canonical": "https://www.paydockit.com/terms/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 5407,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/cookies/",
+      "status": 200,
+      "title": "Cookie information | PayDockit",
+      "description": "PayDockit cookie information. Learn about scope, responsibilities, and local document processing.",
+      "h1": [
+        "Cookie information"
+      ],
+      "canonical": "https://www.paydockit.com/cookies/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 5122,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/editorial-policy/",
+      "status": 200,
+      "title": "Editorial policy | PayDockit",
+      "description": "PayDockit editorial policy. Learn about scope, responsibilities, and local document processing.",
+      "h1": [
+        "Editorial policy"
+      ],
+      "canonical": "https://www.paydockit.com/editorial-policy/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 5266,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/editorial-policy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/scope/",
+      "status": 200,
+      "title": "Presets and calculation scope | PayDockit",
+      "description": "PayDockit presets and calculation scope. Learn about scope, responsibilities, and local document processing.",
+      "h1": [
+        "Presets and calculation scope"
+      ],
+      "canonical": "https://www.paydockit.com/scope/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 5899,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/contact/",
+      "status": 200,
+      "title": "Contact and corrections | PayDockit",
+      "description": "PayDockit contact and corrections. Learn about scope, responsibilities, and local document processing.",
+      "h1": [
+        "Contact and corrections"
+      ],
+      "canonical": "https://www.paydockit.com/contact/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 5199,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/tools/salary-slip/",
+      "status": 200,
+      "title": "Free Salary Slip Generator | Payslip PDF & Word | PayDockit",
+      "description": "Create a salary slip or payslip with earnings, deductions and net pay. Choose your currency and download PDF or editable Word. Free, no signup.",
+      "h1": [
+        "Free salary slip and payslip generator"
+      ],
+      "canonical": "https://www.paydockit.com/tools/salary-slip/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 9491,
+      "schemaTypes": [
+        "WebApplication",
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/guides/understanding-your-salary-slip/",
+        "https://www.paydockit.com/guides/gross-net-and-cash-payable/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/tools/employment-certificate/",
+      "status": 200,
+      "title": "Free Employment Certificate & Confirmation Letter Generator | PayDockit",
+      "description": "Prepare an employment certificate or confirmation letter with role, dates and optional salary. Download PDF or editable Word. Free, no signup.",
+      "h1": [
+        "Free employment certificate generator"
+      ],
+      "canonical": "https://www.paydockit.com/tools/employment-certificate/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 9810,
+      "schemaTypes": [
+        "WebApplication",
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/employment-certificate/",
+        "https://www.paydockit.com/guides/employment-vs-salary-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/employment-certificate/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/tools/salary-certificate/",
+      "status": 200,
+      "title": "Free Salary Certificate Generator | PDF & Word Format | PayDockit",
+      "description": "Create an employer-issued salary certificate with monthly or annual, gross or net pay. Add your letterhead and download PDF or Word. Free, no signup.",
+      "h1": [
+        "Free salary certificate generator"
+      ],
+      "canonical": "https://www.paydockit.com/tools/salary-certificate/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 9790,
+      "schemaTypes": [
+        "WebApplication",
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/salary-certificate/",
+        "https://www.paydockit.com/guides/employment-vs-salary-certificate/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/guides/gross-net-and-cash-payable/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/salary-certificate/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/tools/stamp-maker/",
+      "status": 200,
+      "title": "Free Online Stamp Maker | Company Stamp PNG & SVG | PayDockit",
+      "description": "Design a company stamp with curved text, borders and custom ink colors. Download a transparent PNG or scalable SVG. Free online stamp maker, no signup.",
+      "h1": [
+        "Free online stamp maker and company stamp generator"
+      ],
+      "canonical": "https://www.paydockit.com/tools/stamp-maker/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 27566,
+      "schemaTypes": [
+        "WebApplication",
+        "BreadcrumbList"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/stamp-maker/",
+        "https://www.paydockit.com/stamp-maker/?design=corporate-round",
+        "https://www.paydockit.com/stamp-maker/?design=classic-round",
+        "https://www.paydockit.com/stamp-maker/?design=triple-ring",
+        "https://www.paydockit.com/stamp-maker/?design=monogram-round",
+        "https://www.paydockit.com/stamp-maker/?design=department-round",
+        "https://www.paydockit.com/stamp-maker/?design=oval-ring",
+        "https://www.paydockit.com/stamp-maker/?design=office-rectangle",
+        "https://www.paydockit.com/stamp-maker/?design=rounded-office",
+        "https://www.paydockit.com/stamp-maker/?design=square-monogram",
+        "https://www.paydockit.com/stamp-maker/?design=minimal-oval",
+        "https://www.paydockit.com/guides/company-stamp-png-vs-svg/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/guides/privacy-and-local-backups/",
+        "https://www.paydockit.com/stamp-maker/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/gross-to-net/",
+      "status": 200,
+      "title": "Gross to net calculator with manual deductions | PayDockit",
+      "description": "Calculate net wages by subtracting employee deductions you enter from gross wages. Add nonwage reimbursements separately to find cash payable. This is not an automatic income-tax or take-home-pay calculator for a country.",
+      "h1": [
+        "Gross to net calculator with manual deductions"
+      ],
+      "canonical": "https://www.paydockit.com/calculators/gross-to-net/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6277,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/calculator/?mode=gross-to-net",
+        "https://www.paydockit.com/calculators/salary-converter/",
+        "https://www.paydockit.com/calculators/salary-increase/",
+        "https://www.paydockit.com/calculators/overtime/",
+        "https://www.paydockit.com/calculators/unpaid-leave/",
+        "https://www.paydockit.com/calculators/amount-to-words/",
+        "https://www.paydockit.com/guides/custom-tax-brackets/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/salary-converter/",
+      "status": 200,
+      "title": "Hourly to monthly and annual salary calculator | PayDockit",
+      "description": "Convert an hourly rate into estimated weekly, monthly and annual earnings using hours worked per week and paid weeks per year. Monthly pay is an annual average, not an exact monthly payment schedule.",
+      "h1": [
+        "Hourly to monthly and annual salary calculator"
+      ],
+      "canonical": "https://www.paydockit.com/calculators/salary-converter/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6254,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/calculators/salary-converter/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/calculator/?mode=salary-converter",
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/calculators/salary-increase/",
+        "https://www.paydockit.com/calculators/overtime/",
+        "https://www.paydockit.com/calculators/unpaid-leave/",
+        "https://www.paydockit.com/calculators/amount-to-words/",
+        "https://www.paydockit.com/guides/custom-tax-brackets/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/salary-increase/",
+      "status": 200,
+      "title": "Salary increase percentage calculator | PayDockit",
+      "description": "Calculate the amount of a percentage pay rise and the resulting salary. Enter your current salary and raise percentage using the same pay period and currency for both salaries.",
+      "h1": [
+        "Salary increase percentage calculator"
+      ],
+      "canonical": "https://www.paydockit.com/calculators/salary-increase/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6115,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/calculators/salary-increase/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/calculator/?mode=salary-increase",
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/calculators/salary-converter/",
+        "https://www.paydockit.com/calculators/overtime/",
+        "https://www.paydockit.com/calculators/unpaid-leave/",
+        "https://www.paydockit.com/calculators/amount-to-words/",
+        "https://www.paydockit.com/guides/custom-tax-brackets/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/overtime/",
+      "status": 200,
+      "title": "Overtime pay calculator | PayDockit",
+      "description": "Calculate overtime earnings from overtime hours, the hourly rate and a multiplier you choose. The calculator does not decide whether overtime is owed or which multiplier applies.",
+      "h1": [
+        "Overtime pay calculator"
+      ],
+      "canonical": "https://www.paydockit.com/calculators/overtime/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6071,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/calculators/overtime/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/calculator/?mode=overtime",
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/calculators/salary-converter/",
+        "https://www.paydockit.com/calculators/salary-increase/",
+        "https://www.paydockit.com/calculators/unpaid-leave/",
+        "https://www.paydockit.com/calculators/amount-to-words/",
+        "https://www.paydockit.com/guides/custom-tax-brackets/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/unpaid-leave/",
+      "status": 200,
+      "title": "Unpaid leave deduction calculator | PayDockit",
+      "description": "Calculate a leave deduction and remaining pay using a salary, unpaid days and a day divisor you supply. Select the divisor required by the actual pay arrangement; the calculator does not infer local leave law.",
+      "h1": [
+        "Unpaid leave deduction calculator"
+      ],
+      "canonical": "https://www.paydockit.com/calculators/unpaid-leave/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6250,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/calculators/unpaid-leave/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/calculator/?mode=unpaid-leave",
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/calculators/salary-converter/",
+        "https://www.paydockit.com/calculators/salary-increase/",
+        "https://www.paydockit.com/calculators/overtime/",
+        "https://www.paydockit.com/calculators/amount-to-words/",
+        "https://www.paydockit.com/guides/custom-tax-brackets/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/amount-to-words/",
+      "status": 200,
+      "title": "Amount to words converter | PayDockit",
+      "description": "Convert a nonnegative monetary amount into English words using the selected currency. Fractional amounts use a fraction of the currency unit, avoiding assumptions about names such as cents or fils.",
+      "h1": [
+        "Amount to words converter"
+      ],
+      "canonical": "https://www.paydockit.com/calculators/amount-to-words/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6171,
+      "schemaTypes": [],
+      "internalLinks": [
+        "https://www.paydockit.com/calculators/amount-to-words/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/calculator/?mode=amount-to-words",
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/calculators/salary-converter/",
+        "https://www.paydockit.com/calculators/salary-increase/",
+        "https://www.paydockit.com/calculators/overtime/",
+        "https://www.paydockit.com/calculators/unpaid-leave/",
+        "https://www.paydockit.com/guides/custom-tax-brackets/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/guides/understanding-your-salary-slip/",
+      "status": 200,
+      "title": "What goes on a salary slip? | PayDockit",
+      "description": "A practical guide to the details, numbers, and sections of a clear payslip.",
+      "h1": [
+        "What goes on a salary slip?"
+      ],
+      "canonical": "https://www.paydockit.com/guides/understanding-your-salary-slip/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6874,
+      "schemaTypes": [
+        "Article"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/guides/understanding-your-salary-slip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/editorial-policy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/guides/employment-vs-salary-certificate/",
+      "status": 200,
+      "title": "Employment or salary certificate? | PayDockit",
+      "description": "Choose the right document for the request in front of you.",
+      "h1": [
+        "Employment or salary certificate?"
+      ],
+      "canonical": "https://www.paydockit.com/guides/employment-vs-salary-certificate/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 8260,
+      "schemaTypes": [
+        "Article"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/guides/employment-vs-salary-certificate/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/editorial-policy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/guides/gross-net-and-cash-payable/",
+      "status": 200,
+      "title": "Gross pay, net pay, and cash payable | PayDockit",
+      "description": "Three useful totals. Here is what each one actually means.",
+      "h1": [
+        "Gross pay, net pay, and cash payable"
+      ],
+      "canonical": "https://www.paydockit.com/guides/gross-net-and-cash-payable/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6390,
+      "schemaTypes": [
+        "Article"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/guides/gross-net-and-cash-payable/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/calculators/gross-to-net/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/editorial-policy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/guides/country-presets/",
+      "status": 200,
+      "title": "What a country preset changes | PayDockit",
+      "description": "Convenient formatting, with your amounts kept intact.",
+      "h1": [
+        "What a country preset changes"
+      ],
+      "canonical": "https://www.paydockit.com/guides/country-presets/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6220,
+      "schemaTypes": [
+        "Article"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/guides/country-presets/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/editorial-policy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/guides/privacy-and-local-backups/",
+      "status": 200,
+      "title": "Your documents stay in your browser | PayDockit",
+      "description": "Understand local processing, saving, and downloadable backups.",
+      "h1": [
+        "Your documents stay in your browser"
+      ],
+      "canonical": "https://www.paydockit.com/guides/privacy-and-local-backups/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6445,
+      "schemaTypes": [
+        "Article"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/guides/privacy-and-local-backups/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/editorial-policy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/guides/custom-tax-brackets/",
+      "status": 200,
+      "title": "How to check your custom tax brackets | PayDockit",
+      "description": "Progressive slices and base-plus-marginal calculations explained.",
+      "h1": [
+        "How to check your custom tax brackets"
+      ],
+      "canonical": "https://www.paydockit.com/guides/custom-tax-brackets/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 6540,
+      "schemaTypes": [
+        "Article"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/guides/custom-tax-brackets/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/rules/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/editorial-policy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    },
+    {
+      "url": "https://www.paydockit.com/guides/company-stamp-png-vs-svg/",
+      "status": 200,
+      "title": "Company stamp PNG or SVG: which should you download? | PayDockit",
+      "description": "Choose a transparent stamp image or scalable vector artwork, set its size, and check the result before adding it to a document.",
+      "h1": [
+        "Company stamp PNG or SVG: which should you download?"
+      ],
+      "canonical": "https://www.paydockit.com/guides/company-stamp-png-vs-svg/",
+      "robots": "index, follow",
+      "scriptSrcCount": 0,
+      "htmlBytes": 8662,
+      "schemaTypes": [
+        "Article"
+      ],
+      "internalLinks": [
+        "https://www.paydockit.com/guides/company-stamp-png-vs-svg/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/templates/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/payslip/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/editorial-policy/",
+        "https://www.paydockit.com/",
+        "https://www.paydockit.com/tools/salary-slip/",
+        "https://www.paydockit.com/tools/employment-certificate/",
+        "https://www.paydockit.com/tools/salary-certificate/",
+        "https://www.paydockit.com/tools/stamp-maker/",
+        "https://www.paydockit.com/about/",
+        "https://www.paydockit.com/guides/",
+        "https://www.paydockit.com/scope/",
+        "https://www.paydockit.com/contact/",
+        "https://www.paydockit.com/privacy/",
+        "https://www.paydockit.com/terms/",
+        "https://www.paydockit.com/cookies/",
+        "https://www.paydockit.com/editorial-policy/"
+      ]
+    }
+  ],
+  "internalLinkChecks": [
+    {
+      "url": "https://www.paydockit.com/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/templates/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/guides/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/tools/salary-slip/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/tools/employment-certificate/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/tools/salary-certificate/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/tools/stamp-maker/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/gross-to-net/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/salary-converter/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/salary-increase/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/overtime/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/unpaid-leave/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculators/amount-to-words/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/guides/privacy-and-local-backups/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/guides/understanding-your-salary-slip/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/guides/employment-vs-salary-certificate/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/guides/gross-net-and-cash-payable/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/about/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/scope/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/contact/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/privacy/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/terms/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/cookies/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/editorial-policy/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=classic",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=minimal",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=corporate",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=ledger",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=executive",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=editorial",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=modern",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=framed",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=payroll-form",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/payslip/?template=hr-letter",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=classic",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=minimal",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=corporate",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=ledger",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=executive",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=editorial",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=modern",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=framed",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=payroll-form",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/?template=hr-letter",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=classic",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=minimal",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=corporate",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=ledger",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=executive",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=editorial",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=modern",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=framed",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=payroll-form",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/?template=hr-letter",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/guides/country-presets/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/guides/custom-tax-brackets/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/guides/company-stamp-png-vs-svg/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=corporate-round",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=classic-round",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=triple-ring",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=monogram-round",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=department-round",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=oval-ring",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=office-rectangle",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=rounded-office",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=square-monogram",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/?design=minimal-oval",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculator/?mode=gross-to-net",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculator/?mode=salary-converter",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculator/?mode=salary-increase",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculator/?mode=overtime",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculator/?mode=unpaid-leave",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/calculator/?mode=amount-to-words",
+      "status": 200
+    },
+    {
+      "url": "https://www.paydockit.com/rules/",
+      "status": 200
+    }
+  ],
+  "orphanSitemapUrls": [],
+  "workspaces": [
+    {
+      "url": "https://www.paydockit.com/payslip/",
+      "status": 200,
+      "robots": "noindex, nofollow noindex, nofollow",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "https://www.paydockit.com/employment-certificate/",
+      "status": 200,
+      "robots": "noindex, nofollow noindex, nofollow",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "https://www.paydockit.com/salary-certificate/",
+      "status": 200,
+      "robots": "noindex, nofollow noindex, nofollow",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "https://www.paydockit.com/stamp-maker/",
+      "status": 200,
+      "robots": "noindex, nofollow noindex, nofollow",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "https://www.paydockit.com/calculator/",
+      "status": 200,
+      "robots": "noindex, nofollow noindex, nofollow",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "https://www.paydockit.com/rules/",
+      "status": 200,
+      "robots": "noindex, nofollow noindex, nofollow",
+      "cacheControl": "no-store"
+    },
+    {
+      "url": "https://www.paydockit.com/batch/",
+      "status": 200,
+      "robots": "noindex, nofollow noindex, nofollow",
+      "cacheControl": "no-store"
+    }
+  ],
+  "checks": {
+    "robotsSitemap": true,
+    "immutableAssetCaching": "public, max-age=31536000, immutable",
+    "missingRouteStatus": 404
+  },
+  "failures": []
+}

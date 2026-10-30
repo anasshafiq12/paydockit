@@ -7,6 +7,7 @@
   ],
   "scripts": {
     "build:vercel": "node scripts/build-vercel.mjs",
+    "audit:seo": "node scripts/audit-seo.mjs",
     "dev": "concurrently -n public,tools -c blue,green \"npm run dev -w apps/public-site\" \"npm run dev -w apps/private-tools\"",
     "build": "npm run build -w apps/private-tools && npm run build -w apps/public-site && node scripts/optimize-public.mjs && node scripts/headers.mjs && node scripts/check-build.mjs",
     "test": "vitest run",

@@ -33,7 +33,7 @@ for(const app of ['public-site','private-tools']){
 }
 const baseline={'Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff','X-Frame-Options':'DENY','Permissions-Policy':'camera=(), microphone=(), geolocation=()'};
 const toolPattern=`/(?:${tools.join('|')})(?:/.*)?`;
-const routes=[{src:'/(.*)',headers:baseline,continue:true},{src:toolPattern,headers:{'X-Robots-Tag':'noindex, nofollow','Cache-Control':'no-store'},continue:true}];
+const routes=[{src:'/(.*)',headers:baseline,continue:true},{src:'/_next/static/(.*)',headers:{'Cache-Control':'public, max-age=31536000, immutable'},continue:true},{src:toolPattern,headers:{'X-Robots-Tag':'noindex, nofollow','Cache-Control':'no-store'},continue:true}];
 const escape=value=>value.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 for(const {relative,app} of exported){
  if(!relative.endsWith('index.html'))continue;
@@ -47,7 +47,7 @@ for(const {relative,app} of exported){
  if(!policy)throw new Error('Missing content security policy for '+route);
  if(route!=='/')routes.push({src:'^'+escape(route.slice(0,-1))+'$',status:308,headers:{Location:route}});
  routes.push({src:'^'+escape(route)+'$',dest:'/'+relative,headers:{'Content-Security-Policy':policy}});
- routes.push({src:'^/'+escape(relative)+'$',headers:{'Content-Security-Policy':policy},continue:true});
+ routes.push({src:'^/'+escape(relative)+'$',status:308,headers:{Location:route}});
 }
 routes.push({handle:'filesystem'},{src:'/(.*)',dest:'/404.html',status:404});
 await writeFile(path.join(output,'config.json'),JSON.stringify({version:3,routes},null,2));
