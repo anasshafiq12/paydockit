@@ -29,7 +29,7 @@ Build emits **two independent static sites**:
 - `apps/public-site/out` — SEO pages and original English content.
 - `apps/private-tools/out` — document editors, stamp studio, calculators, and custom rules.
 
-After building, `scripts/headers.mjs` creates host-compatible security headers with hashes for Next's inline scripts. `scripts/check-build.mjs` verifies initial SEO markup, private noindex, external script restrictions, and initial JavaScript budgets. Reports are written to `docs/build-report.json`.
+After building, `scripts/headers.mjs` creates host-compatible security headers with hashes for inline scripts. Public pages allow HTTPS advertising resources; private tools retain their self-only script policy. `scripts/check-build.mjs` verifies SEO markup, private noindex, the exact public AdSense tag, its absence from private tools, and first-party JavaScript budgets. Remote AdSense bytes are not included in those budgets. Reports are written to `docs/build-report.json`.
 
 ## Available workflows
 
@@ -60,7 +60,7 @@ Public pages contain server-generated HTML, unique titles/descriptions, canonica
 2. Supply operator identity, support contact, and hosting retention details in policy content.
 3. Review the six editorial drafts and optional Arabic/Urdu wording with accountable reviewers.
 4. Complete the remaining browser, device, export parity, and accessibility checks listed in the implementation checklist.
-5. Keep advertising disabled unless the real publisher and appropriate consent provider are configured. No publisher ID or consent is fabricated.
+5. Public pages include the owner-supplied AdSense publisher `ca-pub-9360996257353318` and `/ads.txt`. Configure site approval, ad placements and any required Google-certified consent messages in AdSense. This repository does not fabricate consent or enable advertising scripts in document editors.
 
 See `docs/architecture.md`, `docs/privacy-data-map.md`, `docs/rule-maintenance.md`, `docs/source-register.md`, and `docs/implementation-status.md`.
 

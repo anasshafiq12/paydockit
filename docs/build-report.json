@@ -1,7 +1,10 @@
 [
   {
     "app": "public-site",
-    "initialScriptCount": 0,
+    "initialScriptCount": 1,
+    "externalScripts": [
+      "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9360996257353318"
+    ],
     "initialScriptGzipBytes": 0,
     "budgetBytes": 153600,
     "withinBudget": true
@@ -9,6 +12,7 @@
   {
     "app": "private-tools",
     "initialScriptCount": 9,
+    "externalScripts": [],
     "initialScriptGzipBytes": 211266,
     "budgetBytes": 256000,
     "withinBudget": true
