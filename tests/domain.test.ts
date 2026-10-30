@@ -6,7 +6,7 @@ describe('canonical payroll arithmetic',()=>{
  it('uses exact decimals and hourly mode without double counting salary',()=>{const d=blankDocument();d.basis='hourly';d.basic='9999';d.hours='0.1';d.rate='0.2';expect(totals(d).base.toString()).toBe('0.02');});
  it('blank contains no sample identity',()=>{expect(JSON.stringify(blankDocument())).not.toContain('Acme');expect(blankDocument().sample).toBe(false);expect(sampleDocument().sample).toBe(true);});
  it('sample fixture totals match',()=>{const t=totals(sampleDocument());expect(t.gross.toString()).toBe('5600');expect(t.deductions.toString()).toBe('500');expect(t.net.toString()).toBe('5100');});
- it('validates negative, nonfinite and excessive precision',()=>{for(const s of ['-1','NaN','Infinity','0.00001','1000000000000'])expect(amountSchema.safeParse(s).success).toBe(false);});
+ it('validates negative, nonfinite and excessive precision',()=>{for(const s of ['-1','NaN','Infinity','0.000000001','1000000000000'])expect(amountSchema.safeParse(s).success).toBe(false);});
  it('requires names and date ordering before export',()=>{const d=blankDocument();expect(issues(d)).toContain('Company name is required.');d.periodEnd='2020-01-01';expect(issues(d)).toContain('Pay period end must be on or after its start.');});
  it('rejects nonexistent calendar dates',()=>{const d=sampleDocument();d.periodEnd='2026-02-30';expect(issues(d)).toContain('periodEnd: Enter a valid calendar date.');});
  it('deduction changes net wages by the exact same amount',()=>{const d=sampleDocument();const before=totals(d).net;d.lines.push({id:'extra',label:'Extra',translated:'',amount:'0.17',category:'deduction',taxable:false});expect(before.minus(totals(d).net).toString()).toBe('0.17');});

@@ -7,3 +7,4 @@ out/
 .openai/local*
 deployments/
 *.tar.gz
+tmp/
