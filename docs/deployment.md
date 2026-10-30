@@ -16,6 +16,16 @@ npm run build
 
 These are reserved example domains and are not registered, deployed, or verified domains.
 
+## Vercel
+
+The root `vercel.json` publishes the public site's static export. It explicitly selects the Other framework preset (`framework: null`) so Vercel does not search for a root `.next` directory. Keep the public project's Root Directory empty to use this configuration.
+
+Create a second project from the same repository for the document tools. Set its Root Directory to `apps/private-tools` and enable access to source files outside the Root Directory. The app's `vercel.json` installs and builds from the workspace root, then publishes `out`. The public site also has an app-level configuration if its project uses `apps/public-site` as Root Directory instead.
+
+Set `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_TOOLS_URL` to the two assigned HTTPS production origins in both projects before building. These override the existing preview values in the app environment files. A currency or branding change can then deploy automatically from `main` through the GitHub connection.
+
+Vercel does not consume Cloudflare `_headers` files. The tools configuration supplies its baseline privacy headers; the per-page generated Content-Security-Policy rules need to be translated into Vercel routing configuration before treating the hosting security-header setup as complete.
+
 ## Cloudflare Pages or equivalent
 
 Create two static projects from the same repository and build environment. The first publishes `apps/public-site/out`; the second publishes `apps/private-tools/out`. The root build writes a host `_headers` file into each export. Keep host-injected analytics and automatic scripts OFF on the tools project. Do not enable SPA fallback; nonexistent paths must use `404.html` with a 404 response.
