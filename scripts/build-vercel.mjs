@@ -3,7 +3,7 @@ import {cp,mkdir,readdir,readFile,writeFile,rm} from 'node:fs/promises';
 import path from 'node:path';
 
 const root=process.cwd();
-const origin=new URL(process.env.PAYDOCKIT_SITE_URL||'https://paydockit.vercel.app').origin;
+const origin=new URL(process.env.PAYDOCKIT_SITE_URL||'https://www.paydockit.com').origin;
 const npm=process.env.npm_execpath;
 if(!npm)throw new Error('Run this script through npm run build:vercel.');
 const build=spawnSync(process.execPath,[npm,'run','build'],{stdio:'inherit',env:{...process.env,NEXT_PUBLIC_SITE_URL:origin,NEXT_PUBLIC_TOOLS_URL:origin,NEXT_TELEMETRY_DISABLED:'1'}});
