@@ -16,14 +16,14 @@ await rm(output,{recursive:true,force:true});
 const destination=path.join(output,'static');
 await mkdir(destination,{recursive:true});
 async function files(directory){const result=[];for(const entry of await readdir(directory,{withFileTypes:true})){const file=path.join(directory,entry.name);if(entry.isDirectory())result.push(...await files(file));else result.push(file);}return result;}
-const tools=['payslip','employment-certificate','salary-certificate','stamp-maker','calculator','rules','batch'];
+const tools=['payslip','employment-certificate','salary-certificate','stamp-maker','calculator','rules','batch','pdf-editor','stamp-pdf'];
 const exported=[];
 for(const app of ['public-site','private-tools']){
  const source=path.join(root,'apps',app,'out');
  for(const file of await files(source)){
   const relative=path.relative(source,file).split(path.sep).join('/');
   if(relative==='_headers')continue;
-  if(app==='private-tools'&&!tools.includes(relative.split('/')[0])&&!['_next','fonts'].includes(relative.split('/')[0]))continue;
+  if(app==='private-tools'&&!tools.includes(relative.split('/')[0])&&!['_next','fonts','pdf-assets'].includes(relative.split('/')[0]))continue;
   const target=path.join(destination,relative);
   const bytes=await readFile(file);
   try{const existing=await readFile(target);if(!existing.equals(bytes))throw new Error('Conflicting static asset: '+relative);continue;}catch(error){if(error.code!=='ENOENT')throw error;}

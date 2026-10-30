@@ -9,3 +9,5 @@ deployments/
 *.tar.gz
 tmp/
 .vercel/
+
+apps/private-tools/public/pdf-assets/

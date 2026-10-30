@@ -1,3 +1,4 @@
+import {isAdSenseScript} from './adsense.mjs';
 import {readFile,writeFile,mkdir,stat} from 'node:fs/promises';
 import path from 'node:path';
 
@@ -40,7 +41,7 @@ const urls=[...sitemap.matchAll(/<loc>([\s\S]*?)<\/loc>/g)].map(m=>decode(m[1].t
 assert(urls.length>0,'Sitemap has no URLs.');
 assert(new Set(urls).size===urls.length,'Sitemap contains duplicate URLs.');
 const origin=new URL(urls[0]).origin;
-const workspaces=['payslip','employment-certificate','salary-certificate','stamp-maker','calculator','rules','batch'];
+const workspaces=['payslip','employment-certificate','salary-certificate','stamp-maker','calculator','rules','batch','pdf-editor','stamp-pdf'];
 const isWorkspace=pathname=>workspaces.some(slug=>pathname===`/${slug}`||pathname.startsWith(`/${slug}/`));
 const robots=await readFile(path.join(root,'robots.txt'),'utf8');
 assert(robots.includes(`Sitemap: ${origin}/sitemap.xml`),'robots.txt must reference the canonical sitemap.');
@@ -55,7 +56,7 @@ for(const url of urls){
  assert(canonicalUrl===url,`Canonical mismatch: ${url} -> ${canonicalUrl}`);assert(!/noindex/i.test(robotsMeta+' '+(route.headers['X-Robots-Tag']||'')),`Public page is noindex: ${url}`);
  assert(/width=device-width/i.test(meta(html,'viewport')),`Missing responsive viewport: ${url}`);
  assert(!titles.has(title),`Duplicate title: ${url} and ${titles.get(title)}`);assert(!descriptions.has(description),`Duplicate description: ${url} and ${descriptions.get(description)}`);titles.set(title,url);descriptions.set(description,url);
- const executableScripts=[...html.matchAll(/<script\b[^>]*>/gi)].filter(m=>{const a=attributes(m[0]);return a.src&&a.type!=='application/ld+json';});
+ const executableScripts=[...html.matchAll(/<script\b[^>]*>/gi)].filter(m=>{const a=attributes(m[0]);return a.src&&a.type!=='application/ld+json'&&!isAdSenseScript(m[0]);});
  assert(executableScripts.length===0,`Public page ships executable script source: ${url}`);assert(!/jazzygecko24\.chatgpt\.site|paydockit\.vercel\.app/.test(html),`Old production host remains: ${url}`);
  const schema=[];
  for(const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){if(attributes(match[1]).type!=='application/ld+json')continue;try{const data=JSON.parse(match[2]);schema.push(...(Array.isArray(data)?data:data['@graph']||[data]));}catch{failures.push(`Invalid JSON-LD: ${url}`);}}

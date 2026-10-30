@@ -1,1 +1,10 @@
-{"name":"@paydockit/tools","private":true,"scripts":{"dev":"next dev -p 3001","build":"next build"}}
+{
+  "name": "@paydockit/tools",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "prebuild": "node ../../scripts/prepare-pdf.mjs",
+    "predev": "node ../../scripts/prepare-pdf.mjs"
+  }
+}
