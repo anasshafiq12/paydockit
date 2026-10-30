@@ -1,10 +1,12 @@
 # Architecture
 
-## Two static origins
+## Static apps and deployment modes
 
 `apps/public-site` is a Next.js App Router static export. Public content is rendered at build time and contains ordinary anchors, semantic headings, and metadata before JavaScript runs. `apps/private-tools` is a second Next.js static export containing client components and Material UI. Both share typed modules in `packages/`. Production needs static hosting, not a Next server.
 
-Set the actual main and tools HTTPS origins before building. Local development runs on ports 3000 and 3001. Cross-origin links contain no employee data. Tool URLs accept only allowlisted template/calculator identifiers and the explicit blank-template flag. No account, cookie-sharing, API route, server action, or document-upload endpoint exists.
+Local development runs on ports 3000 and 3001. Separate-origin hosting sets the actual main and tools HTTPS origins before building. The root Vercel deployment instead uses `npm run build:vercel` to package both static apps under `https://paydockit.vercel.app`, with tools at `/payslip/` and the other tool routes. It copies both apps' hashed assets, preserves the public home page and metadata, and translates the generated security headers into Vercel's Build Output API. Pages share browser storage on this deployment; public content ships no executable JavaScript, and third-party scripts remain disabled.
+
+Navigation links contain no employee data. Tool URLs accept only allowlisted template/calculator identifiers and the explicit blank-template flag. No account, cookie-sharing, API route, server action, or document-upload endpoint exists.
 
 ## Data and calculation pipeline
 

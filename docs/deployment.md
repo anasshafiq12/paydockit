@@ -18,13 +18,13 @@ These are reserved example domains and are not registered, deployed, or verified
 
 ## Vercel
 
-The root `vercel.json` publishes the public site's static export. It explicitly selects the Other framework preset (`framework: null`) so Vercel does not search for a root `.next` directory. Keep the public project's Root Directory empty to use this configuration.
+The root `vercel.json` publishes both apps in one deployment through Vercel's Build Output API. It explicitly selects the Other framework preset (`framework: null`) so Vercel does not search for a root `.next` directory. Keep the project's Root Directory empty and leave Output Directory unset to use this configuration.
 
-Create a second project from the same repository for the document tools. Set its Root Directory to `apps/private-tools` and enable access to source files outside the Root Directory. The app's `vercel.json` installs and builds from the workspace root, then publishes `out`. The public site also has an app-level configuration if its project uses `apps/public-site` as Root Directory instead.
+`npm run build:vercel` sets both public and tools links to `https://paydockit.vercel.app`, builds both exports, and merges their assets into `.vercel/output/static`. The public home page remains at `/`; editors are at `/payslip/`, `/employment-certificate/`, and `/salary-certificate/`, with stamp, calculator, rules, and batch routes alongside them. It fails on conflicting assets or old hosting links. Set `PAYDOCKIT_SITE_URL` to change the canonical production origin when moving to another domain.
 
-Set `NEXT_PUBLIC_SITE_URL` and `NEXT_PUBLIC_TOOLS_URL` to the two assigned HTTPS production origins in both projects before building. These override the existing preview values in the app environment files. A currency or branding change can then deploy automatically from `main` through the GitHub connection.
+The build writes `.vercel/output/config.json` with explicit page routing, real 404 responses, shared security headers, the generated per-page Content-Security-Policy hashes, and noindex/no-store headers on tool routes. Public pages retain their zero-runtime optimization. All pages share the deployment's browser storage origin; this mode must remain free of third-party scripts, analytics, or advertising.
 
-Vercel does not consume Cloudflare `_headers` files. The tools configuration supplies its baseline privacy headers; the per-page generated Content-Security-Policy rules need to be translated into Vercel routing configuration before treating the hosting security-header setup as complete.
+The two independent exports and app-level `vercel.json` files remain available for separate-origin hosting. That mode requires separate projects and explicit `NEXT_PUBLIC_SITE_URL` / `NEXT_PUBLIC_TOOLS_URL` environment variables; use `npm run build` instead of the combined Vercel command.
 
 ## Cloudflare Pages or equivalent
 
