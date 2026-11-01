@@ -1,0 +1,3 @@
+company,employee,title,basic,deductions,reimbursements,currency,periodStart,periodEnd,paymentDate
+Acme Studio,Alex Morgan,Designer,4800,420,75,USD,2026-10-01,2026-10-31,2026-10-31
+Acme Studio,Mira Patel,Team Lead,5200,200,0,USD,2026-10-01,2026-10-31,2026-10-31

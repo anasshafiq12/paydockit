@@ -5,6 +5,9 @@ import path from 'node:path';
 // Offline regression checks for the exact static files and Vercel routes being deployed.
 // This does not simulate browser rendering or measure rankings, field CWV, or rich-result eligibility.
 const root=path.resolve('.vercel/output/static');
+const reportArg=process.argv.indexOf('--report');
+if(reportArg!==-1&&!process.argv[reportArg+1])throw new Error('--report requires a filename.');
+const reportPath=reportArg===-1?'docs/qa/seo-latest.json':process.argv[reportArg+1];
 const config=JSON.parse(await readFile('.vercel/output/config.json','utf8'));
 const failures=[];
 const assert=(condition,message)=>{if(!condition)failures.push(message);};
@@ -46,7 +49,7 @@ const isWorkspace=pathname=>workspaces.some(slug=>pathname===`/${slug}`||pathnam
 const robots=await readFile(path.join(root,'robots.txt'),'utf8');
 assert(robots.includes(`Sitemap: ${origin}/sitemap.xml`),'robots.txt must reference the canonical sitemap.');
 assert(!/^Disallow:\s*\/\s*$/mi.test(robots),'robots.txt blocks the whole site.');
-const pages=[];const links=new Set();const titles=new Map();const descriptions=new Map();
+const pages=[];const links=new Set();const titles=new Map();const descriptions=new Map();const fragments=[];
 for(const url of urls){
  const parsed=new URL(url);assert(parsed.origin===origin,`Noncanonical origin in sitemap: ${url}`);assert(!isWorkspace(parsed.pathname),`Workspace included in sitemap: ${url}`);
  const route=await resolve(url);assert(route.status===200&&!!route.file,`Public page does not resolve directly to a static 200: ${url}`);if(!route.file)continue;
@@ -55,27 +58,46 @@ for(const url of urls){
  assert(!!title,`Missing title: ${url}`);assert(!!description,`Missing description: ${url}`);assert(h1.length===1&&!!h1[0],`Expected one nonempty H1: ${url}`);
  assert(canonicalUrl===url,`Canonical mismatch: ${url} -> ${canonicalUrl}`);assert(!/noindex/i.test(robotsMeta+' '+(route.headers['X-Robots-Tag']||'')),`Public page is noindex: ${url}`);
  assert(/width=device-width/i.test(meta(html,'viewport')),`Missing responsive viewport: ${url}`);
+ const social={title:meta(html,'og:title'),description:meta(html,'og:description'),url:meta(html,'og:url'),twitterTitle:meta(html,'twitter:title'),twitterDescription:meta(html,'twitter:description')};
+ assert(social.title===title,`Social title differs from this page's title: ${url}`);
+ assert(social.description===description,`Social description differs from this page's description: ${url}`);
+ assert(social.url===canonicalUrl,`Social URL differs from canonical: ${url}`);
+ assert(social.twitterTitle===title&&social.twitterDescription===description,`Twitter summary does not match this page: ${url}`);
  assert(!titles.has(title),`Duplicate title: ${url} and ${titles.get(title)}`);assert(!descriptions.has(description),`Duplicate description: ${url} and ${descriptions.get(description)}`);titles.set(title,url);descriptions.set(description,url);
  const executableScripts=[...html.matchAll(/<script\b[^>]*>/gi)].filter(m=>{const a=attributes(m[0]);return a.src&&a.type!=='application/ld+json'&&!isAdSenseScript(m[0]);});
  assert(executableScripts.length===0,`Public page ships executable script source: ${url}`);assert(!/jazzygecko24\.chatgpt\.site|paydockit\.vercel\.app/.test(html),`Old production host remains: ${url}`);
  const schema=[];
  for(const match of html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){if(attributes(match[1]).type!=='application/ld+json')continue;try{const data=JSON.parse(match[2]);schema.push(...(Array.isArray(data)?data:data['@graph']||[data]));}catch{failures.push(`Invalid JSON-LD: ${url}`);}}
  for(const item of schema){const types=[item['@type']].flat();const name=types.includes('Article')?item.headline:types.includes('WebApplication')?item.name:null;if(name)assert(visible.toLowerCase().includes(String(name).toLowerCase()),`Primary schema name is not visible: ${url}: ${name}`);}
+ if(parsed.pathname==='/tools/pdf-editor/'){
+  assert(h1[0]?.toLowerCase().includes('pdf editor'),`PDF landing H1 must identify the tool: ${url}`);
+  assert(schema.some(item=>item['@type']==='WebApplication')&&schema.some(item=>item['@type']==='BreadcrumbList'),`PDF application and breadcrumb context missing: ${url}`);
+ }
+ if(parsed.pathname==='/tools/batch-payslip/'){
+  assert(/payslip/i.test(h1[0])&&/CSV/.test(h1[0]),`Batch landing H1 must identify the CSV workflow: ${url}`);
+  assert(schema.some(item=>item['@type']==='WebApplication')&&schema.some(item=>item['@type']==='BreadcrumbList'),`Batch application and breadcrumb context missing: ${url}`);
+  assert(html.includes('/samples/batch-payslips.csv'),`Batch landing needs its working fictional CSV example: ${url}`);
+ }
+ for(const match of html.matchAll(/<img\b[^>]*>/gi)){
+  const image=attributes(match[0]);assert(Object.hasOwn(image,'alt'),`Image needs an alt attribute (empty only for decoration): ${url}`);
+  if(image.src?.startsWith('/'))assert(!!await staticFile(new URL(image.src,url).pathname),`Missing local image ${image.src} on ${url}`);
+ }
  const internalLinks=[];
- for(const match of html.matchAll(/<a\b[^>]*>/gi)){const href=attributes(match[0]).href;if(!href)continue;try{const destination=new URL(href,url);if(destination.origin===origin){destination.hash='';links.add(destination.href);internalLinks.push(destination.href);}}catch{failures.push(`Malformed link on ${url}: ${href}`);}}
+ for(const match of html.matchAll(/<a\b[^>]*>/gi)){const href=attributes(match[0]).href;if(!href)continue;try{const destination=new URL(href,url);if(destination.origin===origin){if(destination.hash)fragments.push({from:url,to:destination.href,id:decodeURIComponent(destination.hash.slice(1))});destination.hash='';links.add(destination.href);internalLinks.push(destination.href);}}catch{failures.push(`Malformed link on ${url}: ${href}`);}}
  const alias=parsed.pathname==='/'?'/index.html':parsed.pathname+'index.html';const aliasRoute=await resolve(origin+alias);
  assert([301,308].includes(aliasRoute.status)&&aliasRoute.redirect===url,`index.html alias does not permanently redirect to canonical: ${alias}`);
- pages.push({url,status:route.status,title,description,h1,canonical:canonicalUrl,robots:robotsMeta,scriptSrcCount:executableScripts.length,htmlBytes:Buffer.byteLength(html),schemaTypes:schema.map(s=>s['@type']),internalLinks});
+ pages.push({url,status:route.status,title,description,h1,canonical:canonicalUrl,robots:robotsMeta,social,scriptSrcCount:executableScripts.length,htmlBytes:Buffer.byteLength(html),schemaTypes:schema.map(s=>s['@type']),internalLinks});
 }
 const linkChecks=[];
 for(const url of links){const result=await follow(url);assert(result.status===200,`Broken internal href: ${url} (${result.status})`);linkChecks.push({url,status:result.status});}
+for(const fragment of fragments){const result=await follow(fragment.to);if(result.file&&path.extname(result.file)==='.html'){const html=await readFile(result.file,'utf8');const ids=[...html.matchAll(/<[a-z][^>]*>/gi)].map(tag=>attributes(tag[0]).id);assert(ids.includes(fragment.id),`Missing fragment ${fragment.id}: ${fragment.from} -> ${fragment.to}`);}}
 const editors=[];
-for(const slug of workspaces){const url=`${origin}/${slug}/`;const result=await resolve(url);assert(result.status===200&&!!result.file,`Workspace unavailable: ${url}`);if(!result.file)continue;const html=await readFile(result.file,'utf8');const tags=meta(html,'robots')+' '+(result.headers['X-Robots-Tag']||'');assert(/noindex/i.test(tags),`Workspace lost noindex: ${url}`);assert(result.headers['Cache-Control']==='no-store',`Workspace lost no-store: ${url}`);editors.push({url,status:result.status,robots:tags,cacheControl:result.headers['Cache-Control']});}
+for(const slug of workspaces){const url=`${origin}/${slug}/`;const result=await resolve(url);assert(result.status===200&&!!result.file,`Workspace unavailable: ${url}`);if(!result.file)continue;const html=await readFile(result.file,'utf8');const tags=meta(html,'robots')+' '+(result.headers['X-Robots-Tag']||'');assert(/noindex/i.test(tags),`Workspace lost noindex: ${url}`);assert(result.headers['Cache-Control']==='no-store',`Workspace lost no-store: ${url}`);assert(!html.includes('pagead2.googlesyndication.com'),`Advertising script must stay out of document workspaces: ${url}`);editors.push({url,status:result.status,robots:tags,cacheControl:result.headers['Cache-Control']});}
 const hashed=await resolve(origin+'/_next/static/chunks/audit-example.js');
 assert(/max-age=31536000/.test(hashed.headers['Cache-Control']||'')&&/immutable/.test(hashed.headers['Cache-Control']||''),'Hashed /_next/static assets need one-year immutable caching.');
 const missing=await resolve(origin+'/seo-audit-definitely-missing/');assert(missing.status===404,'Unknown paths must return a real 404.');
 const orphanSitemapUrls=urls.filter(url=>url!==origin+'/'&&!pages.some(page=>page.internalLinks.includes(url)));assert(orphanSitemapUrls.length===0,'Orphan sitemap URLs: '+orphanSitemapUrls.join(', '));
-const report={auditedAt:new Date().toISOString(),site:origin,scope:'Offline validation of generated static HTML and Vercel route configuration. No browser rendering, external rich-result validation, rankings, or field Core Web Vitals are measured.',passed:failures.length===0,sitemapUrls:urls.length,pages,internalLinkChecks:linkChecks,orphanSitemapUrls,workspaces:editors,checks:{robotsSitemap:true,immutableAssetCaching:hashed.headers['Cache-Control'],missingRouteStatus:missing.status},failures};
-await mkdir('docs/qa',{recursive:true});await writeFile('docs/qa/seo-after-2026-10-30.json',JSON.stringify(report,null,2));
+const report={auditedAt:new Date().toISOString(),site:origin,scope:'Offline validation of generated static HTML and Vercel route configuration. No browser rendering, external rich-result validation, rankings, or field Core Web Vitals are measured.',passed:failures.length===0,sitemapUrls:urls.length,pages,internalLinkChecks:linkChecks,fragmentChecks:fragments,orphanSitemapUrls,workspaces:editors,checks:{robotsSitemap:true,immutableAssetCaching:hashed.headers['Cache-Control'],missingRouteStatus:missing.status},failures};
+await mkdir(path.dirname(reportPath),{recursive:true});await writeFile(reportPath,JSON.stringify(report,null,2));
 console.log(`SEO regression: ${pages.length} public pages, ${links.size} internal links, ${editors.length} workspaces; ${failures.length} failures.`);
 if(failures.length){for(const failure of failures)console.error('- '+failure);process.exitCode=1;}

@@ -14,7 +14,7 @@ export const toolContent={
    ['Can I make a salary slip without a watermark?','Yes. Documents you create from a blank form have no PayDockit watermark. Fictional sample documents retain their SAMPLE mark.'],
    ['Can I edit my payslip in Word?','Yes. Download DOCX for an editable Word document, or export a JSON project to keep the PayDockit fields and settings.'],
   ],
-  related:[['/guides/understanding-your-salary-slip/','What to include on a salary slip'],['/guides/gross-net-and-cash-payable/','Gross pay, net wages and cash payable'],['/tools/salary-certificate/','Create a salary certificate']],
+  related:[['/tools/batch-payslip/','Create payslips from CSV in a batch'],['/guides/understanding-your-salary-slip/','What to include on a salary slip'],['/guides/gross-net-and-cash-payable/','Gross pay, net wages and cash payable'],['/tools/salary-certificate/','Create a salary certificate']],
  },
  'employment-certificate':{
   primaryKeyword:'Free employment certificate generator',
@@ -43,10 +43,11 @@ export const toolContent={
   example:'Fictional example: monthly basic pay of 4,800 plus 800 in allowances gives 5,600 gross salary. With 500 in employee deductions, net salary is 5,100. A certificate should clearly identify which amount and pay frequency it confirms.',
   faqs:[
    ['How is a salary certificate different from a payslip?','A salary certificate confirms compensation in an employer letter. A payslip lists earnings and deductions for a particular pay period. Neither alone proves that money was transferred.'],
+   ['Can an employee prepare their own salary certificate?','An employee can prepare a draft for the employer to review, but the letter should be checked and issued by an authorized employer representative. PayDockit does not independently verify employment or salary.'],
    ['Can I prepare a salary certificate for a loan or visa request?','You can prepare the employer letter, but first ask the recipient which details and authorization it needs. PayDockit does not guarantee acceptance by a lender or visa authority.'],
    ['Can I choose a currency other than USD?','Yes. Choose a currency or enter a custom code. Changing the currency label does not perform exchange-rate conversion.'],
   ],
-  related:[['/guides/employment-vs-salary-certificate/','Choose an employment or salary certificate'],['/tools/salary-slip/','Salary slip and payslip generator'],['/guides/gross-net-and-cash-payable/','Understand gross and net pay']],
+  related:[['/templates/#salary-certificates','Browse salary certificate templates'],['/guides/employment-vs-salary-certificate/','Choose an employment or salary certificate'],['/tools/salary-slip/','Salary slip and payslip generator'],['/guides/gross-net-and-cash-payable/','Understand gross and net pay']],
  },
  'stamp-maker':{
   primaryKeyword:'Free online stamp maker and company stamp generator',
@@ -60,8 +61,9 @@ export const toolContent={
   faqs:[
    ['Is this an online rubber stamp maker or a physical stamp service?','It creates digital stamp designs. PayDockit does not manufacture or ship rubber stamps. Ask your chosen supplier which file format and dimensions it accepts.'],
    ['Should I download PNG or SVG?','Choose transparent PNG for placing a stamp image into a document. Choose SVG for scalable artwork or further vector editing; keep fonts available when editing SVG text.'],
+   ['Can I add this stamp to an existing PDF?','Yes. In the studio choose Stamp an existing PDF, then use the saved studio design in the PDF workspace. You can position, resize or rotate it, apply it to every page, and download an edited copy. A graphic stamp is not a digital certificate.'],
    ['Does a company stamp authenticate a document?','A stamp graphic does not verify identity, authenticate an issuer or replace a legally required signature. Use only business names and details you are authorized to represent.'],
   ],
-  related:[['/guides/company-stamp-png-vs-svg/','Choose PNG or SVG for a company stamp'],['/tools/employment-certificate/','Prepare an employment confirmation letter'],['/guides/privacy-and-local-backups/','Local processing and project backups']],
+  related:[['/tools/pdf-editor/','Stamp or annotate an existing PDF'],['/guides/company-stamp-png-vs-svg/','Choose PNG or SVG for a company stamp'],['/tools/employment-certificate/','Prepare an employment confirmation letter'],['/guides/privacy-and-local-backups/','Local processing and project backups']],
  },
 } as const;

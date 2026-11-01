@@ -13,7 +13,7 @@
     "app": "private-tools",
     "initialScriptCount": 9,
     "externalScripts": [],
-    "initialScriptGzipBytes": 211391,
+    "initialScriptGzipBytes": 211394,
     "budgetBytes": 256000,
     "withinBudget": true
   }
